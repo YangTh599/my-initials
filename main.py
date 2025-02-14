@@ -17,10 +17,21 @@ def init_game():
     window = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
     return window
 
+def draw_line(window,coord1,coord2):
+    pygame.draw.line(window, THAYER_GREEN, coord1,coord2, 50)
+
 # Draw Function to update graphics
 def draw(window):
     
-    window.fill(WHITE) # 15
+    window.fill(WHITE)
+
+    draw_line(window,[10,50], [390,50])
+    draw_line(window,[200,50], [200,780])
+
+    draw_line(window, [600,780], [600,400])
+    draw_line(window, [420,30], [600,400])
+    draw_line(window, [750,30], [600,400])
+
     pygame.display.update()
 
 def handle_events():
