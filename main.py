@@ -11,7 +11,7 @@ from pygame_config import *
 
 def init_game():
     pygame.init()
-    pygame.display.set_caption("Pygame Window Caption is up here") # Window Caption
+    pygame.display.set_caption("El Initials") # Window Caption
 
     #Pygame Window
     window = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
@@ -25,9 +25,11 @@ def draw(window):
     
     window.fill(WHITE)
 
+    #T
     draw_line(window,[10,50], [390,50])
     draw_line(window,[200,50], [200,780])
 
+    #Y
     draw_line(window, [600,780], [600,400])
     draw_line(window, [420,30], [600,400])
     draw_line(window, [750,30], [600,400])
